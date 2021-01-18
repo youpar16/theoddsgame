@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-boy-container {
+  background-color: #1e8a9f;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  align-items: center;
+  border-radius: 5%;
+}
+#game-boy-container #main-screen {
+  border: 4px solid #aaa;
+  background-color: black;
+  color: #fff;
+  margin-top: 24px;
+  border-radius: 5%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#game-boy-container #main-screen header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+#game-boy-container #main-screen header h1 {
+  margin: 0;
+  padding: 16px;
+}
+#game-boy-container #main-screen header .between {
+  margin: 0;
+  padding: 16px;
+}
+#game-boy-container #main-screen header .number {
+  margin-top: 16px;
+  padding: 16px;
+  font-size: 3rem;
+}
+#game-boy-container #main-screen header .message {
+  margin: 0;
+  padding: 16px;
+}
+#game-boy-container #main-screen header .range-message {
+  width: 20px;
+}
+#game-boy-container #bottom-screen {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#game-boy-container #bottom-screen .input-items {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+#game-boy-container #bottom-screen .input-items .input-field {
+  height: 4rem;
+  width: 70%;
+  align-self: center;
+  background-color: #1e8a9f;
+  font-size: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  border: none;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+  text-align: center;
+}
+#game-boy-container #bottom-screen .input-items input::placeholder {
+  font-size: 11px;
+}
+#game-boy-container #bottom-screen .input-items .controls {
+  height: 96px;
+  width: 96px;
+  display: grid;
+  grid-template-areas: "blank1 up blank2" "leftd center rightd" "blank3 down blank4";
+  align-self: flex-end;
+  margin-top: 16px;
+  margin-right: 32px;
+}
+#game-boy-container #bottom-screen .input-items .controls .up,
+#game-boy-container #bottom-screen .input-items .controls .right,
+#game-boy-container #bottom-screen .input-items .controls .down,
+#game-boy-container #bottom-screen .input-items .controls .left,
+#game-boy-container #bottom-screen .input-items .controls .filler-center {
+  background-color: #383b3e;
+  border: none;
+  height: 32px;
+  width: 32px;
+}
+#game-boy-container #bottom-screen .input-items .controls .filler {
+  background-color: #1e8a9f;
+  border: none;
+  height: 32px;
+  width: 32px;
+}
+#game-boy-container #bottom-screen .input-items .controls .up {
+  grid-area: up;
+}
+#game-boy-container #bottom-screen .input-items .controls .right {
+  grid-area: rightd;
+}
+#game-boy-container #bottom-screen .input-items .controls .down {
+  grid-area: down;
+}
+#game-boy-container #bottom-screen .input-items .controls .left {
+  grid-area: leftd;
+}
+#game-boy-container #bottom-screen .input-items .controls .blank1 {
+  grid-area: blank1;
+}
+#game-boy-container #bottom-screen .input-items .controls .blank2 {
+  grid-area: blank2;
+}
+#game-boy-container #bottom-screen .input-items .controls .blank3 {
+  grid-area: blank3;
+}
+#game-boy-container #bottom-screen .input-items .controls .blank4 {
+  grid-area: blank4;
+}
+#game-boy-container #bottom-screen .input-items .controls .filler-center {
+  grid-area: center;
+}
+#game-boy-container #bottom-screen .input-items .controls .btn:hover {
+  cursor: pointer;
+  background-color: #505559;
+}
+#game-boy-container #bottom-screen .input-items .buttons {
+  display: flex;
+  height: 160px;
+  width: 100%;
+  margin-top: auto;
+  justify-content: space-around;
+}
+#game-boy-container #bottom-screen .input-items .buttons .btn {
+  background-color: #383b3e;
+  border: none;
+  border-radius: 50%;
+  height: 72px;
+  width: 72px;
+  padding: 0;
+}
+#game-boy-container #bottom-screen .input-items .buttons .btn:hover {
+  cursor: pointer;
+  background-color: #505559;
+}
+#game-boy-container #bottom-screen .input-items .buttons .again {
+  align-self: flex-end;
+}
+#game-boy-container #bottom-screen .display-items {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+#game-boy-container #bottom-screen .display-items p {
+  text-align: center;
+}
+#game-boy-container #bottom-screen .display-items .again {
+  align-self: center;
+}
+#game-boy-container #bottom-screen .display-items .message-1 {
+  display: none;
+}
+#game-boy-container #bottom-screen .display-items .message-2 {
+  display: none;
+}
+#game-boy-container #bottom-screen .display-items .decoration {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8px;
+}
+#game-boy-container #bottom-screen .display-items .decoration .red-circle {
+  background-color: #b33551;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#game-boy-container #bottom-screen .display-items .decoration .yellow-circle {
+  background-color: #eff12c;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  #game-boy-container {
+    width: 75%;
+  }
+  #game-boy-container #main-screen {
+    width: 75%;
+  }
+}
+
+@media (max-width: 800px) {
+  #game-boy-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #game-boy-container {
+    width: 100%;
+  }
+  #game-boy-container #main-screen {
+    width: 90%;
+  }
+  #game-boy-container #bottom-screen {
+    display: flex;
+    flex-direction: column;
+  }
+  #game-boy-container #bottom-screen .display-items .message {
+    display: none;
+  }
+}

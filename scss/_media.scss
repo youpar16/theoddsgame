@@ -1,0 +1,34 @@
+// Huge Tablets
+@media (max-width: 1024px) {
+  #game-boy-container {
+    width: 75%;
+    #main-screen {
+      width: 75%;
+    }
+  }
+}
+// Tablets and Smaller
+@media (max-width: 800px) {
+  #game-boy-container {
+    width: 100%;
+  }
+}
+
+// Smart Phones
+@media (max-width: 500px) {
+  #game-boy-container {
+    width: 100%;
+    #main-screen {
+      width: 90%;
+    }
+    #bottom-screen {
+      display: flex;
+      flex-direction: column;
+      .display-items {
+        .message {
+          display: none;
+        }
+      }
+    }
+  }
+}
